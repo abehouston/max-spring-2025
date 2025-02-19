@@ -1,0 +1,25 @@
+{
+	"pattrstorage" : 	{
+		"name" : "synthPart1",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"live.gain~" : [ 0.0 ]
+				}
+
+			}
+,
+			"2" : 			{
+				"id" : 2,
+				"data" : 				{
+					"live.gain~" : [ -33.584871518017366 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
