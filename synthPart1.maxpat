@@ -14,6 +14,32 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgcolor" : [ 0.094118, 0.113725, 0.137255, 1.0 ],
+					"fgcolor" : [ 1.0, 0.603922, 0.0, 1.0 ],
+					"id" : "obj-1",
+					"interval" : 50,
+					"logfreq" : 1,
+					"markercolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
+					"maxclass" : "spectroscope~",
+					"monochrome" : 0,
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 500.00004768371582, 736.923147201538086, 300.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1454.166628420352936, 478.461584091186523, 300.0, 100.0 ],
+					"sono" : 1,
+					"sonohicolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"sonolocolor" : [ 0.094118, 0.113725, 0.137255, 1.0 ],
+					"sonomedcolor" : [ 0.301961, 0.337255, 0.403922, 1.0 ],
+					"sonomedhicolor" : [ 0.494118, 0.556863, 0.607843, 1.0 ],
+					"sonomedlocolor" : [ 0.666667, 0.698039, 0.717647, 1.0 ],
+					"sonomonofgcolor" : [ 0.094118, 0.113725, 0.137255, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"activedialcolor" : [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ],
 					"dialcolor" : [ 0.079348079365577, 0.07934804057877, 0.079348050547289, 1.0 ],
 					"id" : "obj-28",
@@ -147,10 +173,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1423.255763053894043, 88.372089862823486, 153.0, 34.0 ],
+					"patching_rect" : [ 1423.255763053894043, 88.372089862823486, 154.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1413.953437805175781, 104.999996304512024, 153.0, 34.0 ],
+					"presentation_rect" : [ 1413.953437805175781, 104.999996304512024, 154.0, 34.0 ],
 					"text" : "Choose your preset from 1 and 2"
 				}
 
@@ -192,10 +218,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1667.441800832748413, 786.046483516693115, 152.0, 213.0 ],
+					"patching_rect" : [ 1667.441800832748413, 786.046483516693115, 155.0, 213.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 15,
-					"presentation_rect" : [ 1855.33328914642334, 154.999996304512024, 152.0, 213.0 ],
+					"presentation_rect" : [ 1855.33328914642334, 154.999996304512024, 155.0, 213.0 ],
 					"text" : "This controls how the sounds volume changes over tume, the ADSR is represented by four sliders. Attack is how fast the sound reaches its max volume. Decay shows how quickly the sound will drop after its peak. Sustain is the level the sound stays at while you hold the key down. Release is how long it takes for the sound to fade out after you release the key."
 				}
 
@@ -335,7 +361,7 @@
 					"restore" : 					{
 						"live.dial" : [ 0.0 ],
 						"live.dial[1]" : [ 0.0 ],
-						"live.gain~" : [ 0.0 ],
+						"live.gain~" : [ -9.236124911242065 ],
 						"waveform" : [ 1 ]
 					}
 ,
@@ -969,15 +995,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 2,
-					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"order" : 0,
 					"source" : [ "obj-41", 0 ]
 				}
@@ -985,8 +1003,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-2", 0 ],
+					"order" : 3,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
 					"order" : 1,
+					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 2,
 					"source" : [ "obj-41", 0 ]
 				}
 
@@ -1178,7 +1212,7 @@
 
 			}
  ],
-		"originid" : "pat-6",
+		"originid" : "pat-11",
 		"parameters" : 		{
 			"obj-23" : [ "live.dial", "Frequency", 0 ],
 			"obj-28" : [ "live.dial[1]", "Resonance", 0 ],

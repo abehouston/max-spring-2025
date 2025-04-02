@@ -5,7 +5,10 @@
 			"1" : 			{
 				"id" : 1,
 				"data" : 				{
-					"live.gain~" : [ 0.0 ]
+					"live.gain~" : [ 0.0 ],
+					"waveform" : [ 1 ],
+					"live.dial" : [  ],
+					"live.dial[1]" : [  ]
 				}
 
 			}
@@ -13,7 +16,10 @@
 			"2" : 			{
 				"id" : 2,
 				"data" : 				{
-					"live.gain~" : [ -33.584871518017366 ]
+					"live.gain~" : [ -47.997322160302147 ],
+					"waveform" : [ 2 ],
+					"live.dial" : [  ],
+					"live.dial[1]" : [  ]
 				}
 
 			}
